@@ -61,7 +61,7 @@ def findVariant(columnL, RNum):
 
 #outfile=open("out.bed","w")
 outfile=open(infilename+"_"+"conserved"+".bed","w")
-outfile.write("track name=FunctionVar type=bedDetail description=\"Function-specific variants\" db=hg38 visibility=3 \n")
+outfile.write("track name=ConservedVar type=bedDetail description=\"Conserved variants\" db=hg38 visibility=3 \n")
 #Read input alignment file
 for alignment in AlignIO.parse(infile, "maf"):
 #    print("printing alignment")
